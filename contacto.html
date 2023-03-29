@@ -45,18 +45,44 @@
 					<textarea class="input1" name="message" placeholder="Mensaje"></textarea>
 					<span class="shadow-input1"></span>
 				</div>
-
+                
 				<div class="container-contact1-form-btn">
-					<button class="contact1-form-btn">
-						<span>
-							Enviar Formulario
-							<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-						</span>
-					</button>
+					<button type="button" class="contact1-form-btn" data-toggle="modal" data-target="#formularioenvio">
+                        Enviar
+                    </button>
 				</div>
 			</form>
 		</div>
 	</div>
+
+    <!-- Modal -->
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<div class="modal fade" id="formularioenvio" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close d-flex align-items-center justify-content-center" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true" class="ion-ios-close"></span>
+</button>
+</div>
+<div class="modal-body p-4 p-md-5">
+<div class="icon d-flex align-items-center justify-content-center">
+  <span class="ion-ios-person"></span>
+</div>
+<h3 class="text-center mb-4">Formulario enviado.</h3>
+<form action="#" class="login-form">
+</div>
+
+
+<!-- Sin esto no abre el modal xd-->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+    
 
 
 
