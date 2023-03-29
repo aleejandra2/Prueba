@@ -11,42 +11,62 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
     <title>Taller Mecánico</title>
+
+    <style>
+  
+        .navbar .nav-link {
+          color: #000000 !important;
+        }
+      </style>
+  
+
 </head>
 
 <body>
-    <!-- Barra de navegación -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">
-            <img src="mcqueen.jpg" alt="Logo del taller mecánico" width="30" height="30"
-                class="d-inline-block align-top">
-            Taller Mecánico
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Servicios</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Productos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contacto</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
 
+    <!-- Este de aqui abajo se encarga de darle color al Background sin necesidad de un .css-->
+    <div class="bg-light">
+
+
+
+
+
+
+     <!-- Navbar -->
+     <nav class="navbar navbar-expand-lg navbar-dark d-none d-lg-block bg-light" style="z-index: 2000;">
+        <div class="container-fluid">
+          <!-- Navbar brand -->
+          <a class="navbar-brand nav-link" target="_blank" href="#kuchau">
+            <img src="https://assets.stickpng.com/images/59db69d33752880e93e16efc.png" alt="Logo del taller mecánico" width="60" height="30"
+            class="d-inline-block align-top">
+            <strong>Rayo Mackqueen</strong>
+          </a>
+          <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarExample01"
+            aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarExample01">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item active">
+                <a class="nav-link" aria-current="page" href="#index">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#index">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#index">Trabajos</a>
+              </li>
+            </ul>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar -->
+  
 
 
 <!-- Carrusel de imágenes -->
-<div class="container">
+<div class="container bg-light">
 <h1 class="text-center my-5">Últimos trabajos realizados</h1>
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
@@ -56,22 +76,24 @@
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="https://s3.getstickerpack.com/storage/uploads/sticker-pack/random-memes/tray_large.png?a7d8b8b61358d427d58d9820b697217b&d=100x100" class="d-block w-100" alt="Trabajo 1">
-        <a class="nav-link" href="#">Contacto</a>
+        <img src="https://mdbcdn.b-cdn.net/img/new/slides/041.webp" class="d-block w-100" alt="Trabajo 1">
         <div class="carousel-caption d-none d-md-block">
           <h5>Trabajo 1</h5>
+          <p>Aqui va algo. aun no sé , pero algo ira</p>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="https://s3.getstickerpack.com/storage/uploads/sticker-pack/random-memes/tray_large.png?a7d8b8b61358d427d58d9820b697217b&d=100x100" class="d-block w-100" alt="Trabajo 2">
+        <img src="https://mdbcdn.b-cdn.net/img/new/slides/041.webp" class="d-block w-100" alt="Trabajo 2">
         <div class="carousel-caption d-none d-md-block">
           <h5>Trabajo 2</h5>
+          <p>Aqui va algo. aun no sé , pero algo ira</p>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="https://s3.getstickerpack.com/storage/uploads/sticker-pack/random-memes/tray_large.png?a7d8b8b61358d427d58d9820b697217b&d=100x100" class="d-block w-100" alt="Trabajo 3">
+        <img src="https://mdbcdn.b-cdn.net/img/new/slides/041.webp" class="d-block w-100" alt="Trabajo 3">
         <div class="carousel-caption d-none d-md-block">
           <h5>Trabajo 3</h5>
+          <p>Aqui va algo. aun no sé , pero algo ira</p>
         </div>
       </div>
     </div>
@@ -87,7 +109,6 @@
   
   <!-- Contenido principal -->
   <div class="container">
-    <h2 class="text-center my-5">Bienvenidos a nuestro taller mecánico</h2>
     <p class="lead">En nuestro taller ofrecemos servicios de mecánica en general, desde mantenimiento básico hasta reparaciones especializadas. Contamos con personal altamente capacitado y herramientas de última generación para garantizar la calidad en nuestros servicios.</p>
     <p class="lead">Además, ofrecemos precios competitivos y promociones especiales para nuestros clientes habituales. No dudes en contactarnos para cualquier consulta o presupuesto.</p>
   </div>
@@ -98,6 +119,14 @@
       <span class="text-muted">© 2023 Taller Mecánico S.A. Todos los derechos reservados.</span>
     </div>
   </footer>
+
+
+
+
+    <!-- Pruebas -->
+
+
+
   
   
   </body>
